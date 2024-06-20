@@ -196,7 +196,7 @@ color: #eaff00;
     position: relative;
     top: 80vh;
     height: auto;
-    overflow: hidden;
+    overflow: visible;
   }
 
   .quali {
