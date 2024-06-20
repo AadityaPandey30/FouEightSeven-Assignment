@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>foureightseven Assignment</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/58118f0173.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="flex flex-col md:flex-row justify-center items-center h-screen m-0 bg-[#f6e6d9]  ">
+    <div class="container rounded-lg shadow-lg flex main">
+      <!-- Carousel Section -->
+      <div class="w-1/2 carousel relative">
+        <div class="carousel-inner" id="carousel-inner">
+          <img src="image1.webp" alt="Image 1" />
+          <img src="image2.webp" alt="Image 2" />
+          <img src="image3.webp" alt="Image 3" />
+          <img src="image4.webp" alt="Image 4" />
+          <img src="image5.webp" alt="Image 5" />
+          <img src="image6.webp" alt="Image 6" />
+        </div>
+        <div class="indicator-buttons" id="indicator-buttons">
+          <button data-index="0" class="active">
+            <img src="image1.webp" alt="Image 1"  />
+          </button>
+          <button data-index="1">
+            <img src="image2.webp" alt="Image 2"  />
+          </button>
+          <button data-index="2">
+            <img src="image3.webp" alt="Image 3" />
+          </button>
+          <button data-index="3">
+            <img src="image4.webp" alt="Image 4" />
+          </button>
+          <button data-index="4">
+            <img src="image5.webp" alt="Image 5" />
+          </button>
+          <button data-index="5">
+            <img src="image6.webp" alt="Image 6" />
+          </button>
+        </div>
+      </div>
+      <!-- Information Section -->
+      <div class="w-1/2 p-4 info">
+        <h1 class="text-5xl mt-10 mb-2 text-center tracking-tight font-thin">
+          "The Duo"
+        </h1>
+        <h2
+          class="text-5xl mb-4 text-center tracking-tight font-thin underline"
+        >
+          Drizzle & Sizzle Set
+        </h2>
+        <div class="flex my-8 justify-center">
+          <i class="fa-solid fa-star" style="color: #3c422e"></i>
+          <i class="fa-solid fa-star" style="color: #3c422e"></i>
+          <i class="fa-solid fa-star" style="color: #3c422e"></i>
+          <i class="fa-solid fa-star" style="color: #3c422e"></i>
+          <i class="fa-solid fa-star" style="color: #3c422e"></i>
+          <span class="mx-2 font-semibold tracking-wide"
+            ><p>1998 Reviews</p></span
+          >
+        </div>
+        <div class="w-fit quantity m-auto text-center">
+          <div class="text-gray-700 rounded-3xl back p-8">
+            <p class="text-2xl font-semibold mb-4 pl-2 text-left">Quantity</p>
+            <div class="flex cursor-pointer quali">
+              <div class="bord text-center m-2 basis-1/4">
+                <div class="text-white text-[10px] back2 py-4 px-6 w-full">
+                  +10%Off
+                </div>
+                <p class="text-2xl font-bold">1</p>
+                <p class="font-semibold">Set</p>
+              </div>
+              <div class="bord text-center m-2 basis-1/4">
+                <div class="text-white fos text-[10px] back2 p-2 w-full">
+                  Free Shipping! + 14% Off
+                </div>
+                <p class="text-2xl font-bold">2</p>
+                <p class="font-semibold">Sets</p>
+              </div>
+              <div class="bord text-center m-2 basis-1/4">
+                <div class="text-white fos text-[10px] back2 p-2 w-full">
+                  Free Shipping! + 15% Off
+                </div>
+                <p class="text-2xl font-bold">3</p>
+                <p class="font-semibold">Sets</p>
+              </div>
+              <div class="bord text-center m-2 basis-1/4">
+                <div class="text-white fos text-[10px] back2 p-2 w-full">
+                  Free Shipping! + 17% Off
+                </div>
+                <p class="text-2xl font-bold">6</p>
+                <p class="font-semibold">Sets</p>
+              </div>
+            </div>
+            <hr class="m-2 mb-4" style="border-top: dashed 2px" />
+            <div class="flex justify-between">
+              <p class="font-semibold mx-2 cursor-pointer">
+                <input type="radio" value="" class="scale-130 mr-2" /> One Time
+                Purchase
+              </p>
+              <span class="font-semibold mr-2"
+                ><span class="line-through text-gray-500">$74</span> $69</span
+              >
+            </div>
+            <hr class="my-4 mx-2" style="border-top: dashed 2px" />
+            <div class="flex justify-between">
+              <p class="font-semibold mx-2 cursor-pointer">
+                <input type="radio" value="" class="scale-130 mr-2" /> Subscribe
+                & Save
+              </p>
+              <span class="font-semibold mr-2"
+                ><span class="line-through text-gray-500">$74</span>
+                $64.17</span
+              >
+            </div>
+            <hr class="my-4 mx-2" style="border-top: dashed 2px" />
+            <button class="w-full back3 btn btn--stripe btn--radius">
+              Add to Cart - $69
+            </button>
+          </div>
+          <div class="w-fit quantity m-auto text-center mt-12">
+            <div class="flex justify-between">
+              <div class="back2 text-white font-semibold w-full basis-1/3 px-5 py-2 bord2 cursor-pointer">
+                DETAILS
+              </div>
+              <div class="bord font-semibold w-full basis-1/3 px-5 py-2 bord2 cursor-pointer hover:bg-gray-100">
+                HARVEST
+              </div>
+              <div class="bord font-semibold w-full basis-1/3 px-5 py-2 bord2 cursor-pointer hover:bg-gray-100">
+                USE CASES
+              </div>
+            </div>
+
+            <div class="bor3 text-left font-serif p-2">
+                <p class="font-semibold my-4">DRIZZLE: 500ML</p>
+                <p>Extra Virgin finishing oil made from olives that are picked early, when flavor is bold and antioxidants are highest. Made for eating, not heating.</p>
+                <p class="font-semibold my-4">SIZZLE: 750ML</p>
+                <p>Extra Virgin cooking oil made from mature, mid-season olives that yield a more mellow flavor. Use it every day, in every way.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

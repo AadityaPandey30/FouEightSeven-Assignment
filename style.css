@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+.container {
+    height: 100vh;
+}
+.carousel {
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+}
+.carousel img {
+  width: 100%;
+  height: 100vh;
+  object-fit: fill;
+}
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.carousel-inner img {
+  min-width: 100%;
+  min-height: 100vh;
+}
+.indicator-buttons {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.indicator-buttons button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 2px solid black;
+}
+.indicator-buttons img {
+  height: 47px;
+  width: 50px;
+  border-radius: 50%;
+  opacity: 0.9;
+}
+.indicator-buttons button.active {
+  border: 2px solid white;
+}
+.info {
+  font-family: "Merriweather", serif;
+  font-weight: 300;
+  font-style: normal;
+  background: #e8d6c8;
+  color: #3c422e;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+.back {
+  background-color: #f6e6d9;
+  border: 1px solid black;
+}
+.back2 {
+  background-color: #3c422e;
+}
+.bord {
+  border: 1px solid #3c422e;
+  border-radius: 10px;
+}
+.bord div {
+  border-radius: 9px 9px 0px 0px;
+  font-family: sans-serif;
+}
+.quantity {
+  max-width: 600px;
+}
+.fos {
+  font-size: 14px;
+}
+@-webkit-keyframes stripe-slide {
+0% {
+background-position: 0% 0;
+}
+100% {
+background-position: 100% 0;
+}
+}
+@keyframes stripe-slide {
+0% {
+background-position: 0% 0;
+}
+100% {
+background-position: 100% 0;
+}
+}
+
+.btn {
+overflow: visible;
+background: transparent;
+font: inherit;
+line-height: normal;
+cursor: pointer;
+display: block;
+text-decoration: none;
+text-transform: uppercase;
+padding: 16px 36px 22px;
+background-color: #d1e030;
+font-weight: 600;
+border: 2px solid #666;
+border-radius: 6px;
+margin-bottom: 16px;
+transition: all 0.5s ease;
+box-shadow: 0.1px 0.3px 4px 0.1px;
+}
+.btn--stripe {
+overflow: hidden;
+position: relative;
+}
+.btn:-moz-focus-inner {
+padding: 0;
+border: 0;
+}
+.btn--radius {
+border-radius: 36px;
+}
+.btn--stripe:after {
+content: "";
+display: block;
+height: 7px;
+width: 100%;
+background-image: repeating-linear-gradient(45deg, #666, #666 1px, transparent 2px, transparent 5px);
+-webkit-backface-visibility: hidden;
+backface-visibility: hidden;
+border-top: 1px solid #666;
+position: absolute;
+left: 0;
+bottom: 0;
+background-size: 7px 7px;
+
+}
+.btn--stripe:hover {
+background-color: #3c422e;
+color: #fff;
+border-color: #000;
+
+}
+.btn--stripe:hover:after {
+background-image: repeating-linear-gradient(45deg, #fff, #fff 1px, transparent 2px, transparent 5px);
+border-top: 1px solid #000;
+-webkit-animation: stripe-slide 12s infinite linear forwards;
+    animation: stripe-slide 12s infinite linear forwards;
+}
+.btn:active{
+color: #eaff00;
+}
+.bord2{
+    border-radius: 10px 10px 0px 0px;
+}
+.bor3{
+    border: 1px solid #3c422e;
+    border-radius: 0px 0px 10px 10px;
+}
+
+
+/* CSS for responsive behavior */
+@media (max-width: 1000px) {
+  .main {
+    flex-direction: column;
+    overflow-y: scroll;
+    height: 100vh;
+  }
+
+  .container {
+    position: relative;
+    height: auto;
+    overflow: scroll;
+  }
+
+  .carousel {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+  }
+
+  .carousel img {
+    width: 100%;
+    object-fit: fill;
+  }
+
+  .info {
+    width: 100%;
+    position: relative;
+    top: 100vh;
+    height: auto;
+  }
+
+  .quali {
+    flex-direction: column;
+  }
+  .indicator-buttons{
+    flex-direction: row;
+  }
+}
