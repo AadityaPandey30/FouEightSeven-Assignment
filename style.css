@@ -229,7 +229,7 @@ color: #eaff00;
   .info {
     width: 100%;
     position: relative;
-    top: 55vh;
+    top: 50vh;
     height: auto;
     overflow: visible;
   }
@@ -240,8 +240,8 @@ color: #eaff00;
   .indicator-buttons{
     position: absolute;
     flex-direction: row;
-    bottom: 42vh;
-    left: 40%;
+    bottom: 47vh;
+    left: 35%;
     padding: 0px;
     margin: auto;
     z-index: 4;
