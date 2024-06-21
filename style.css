@@ -258,6 +258,7 @@ color: #eaff00;
 }
 .indicator-buttons button.active {
   background-color: rgba(113, 255, 113, 0.7);
+  border: 1px solid black;
 }
 .quali-container {
   display: grid;
