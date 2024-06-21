@@ -28,22 +28,23 @@ html, body {
 }
 .indicator-buttons {
   position: relative;
-  bottom: 365px;
-  left: 15px;
+  bottom: 430px;
+  left: 30px;
   display: flex;
   flex-direction: column;
   gap: 10px;
+  width: fit-content;
 }
 .indicator-buttons button {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.5);
   border: 2px solid black;
 }
 .indicator-buttons img {
-  height: 47px;
-  width: 50px;
+  height: 57px;
+  width: 60px;
   border-radius: 50%;
   opacity: 0.9;
 }
@@ -51,17 +52,15 @@ html, body {
   border: 2px solid white;
 }
 .info {
-  font-family: "Merriweather", serif;
-  font-weight: 300;
-  font-style: normal;
-  background: #e8d6c8;
+  font-family: "ITC Garamond Condensed", "serif";
+  background: #f6e6d9;
   color: #3c422e;
   height: 100vh;
   overflow-y: scroll;
   scroll-behavior: smooth;
 }
 .back {
-  background-color: #f6e6d9;
+  background-color: #FFF4EC;
   border: 1px solid black;
 }
 .back2 {
@@ -70,17 +69,48 @@ html, body {
 .bord {
   border: 1px solid #3c422e;
   border-radius: 10px;
+  text-align: center;
+    margin: 8px;
+    flex: 1 1 21%;
+    font-size: 10px;
 }
 .bord div {
   border-radius: 9px 9px 0px 0px;
   font-family: sans-serif;
 }
 .quantity {
-  max-width: 600px;
+  max-width: 500px;
 }
 .fos {
-  font-size: 14px;
+  padding: 8px;
 }
+.product-title{
+  font-size: 46px;
+  letter-spacing: -1.44px;
+  line-height: .8;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 8px;
+}
+.fnt2{
+  font-family: "GT Alpina Typewriter","monospace";
+  font-size: 20px;
+  color:#3C422E;
+  font-weight: 530;
+}
+i{
+  margin-top: 7px;
+}
+.quali-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.text-white {
+  background-color: #3c422e;
+  color: white;
+}
+
+
 @-webkit-keyframes stripe-slide {
 0% {
 background-position: 0% 0;
@@ -164,14 +194,18 @@ color: #eaff00;
     border: 1px solid #3c422e;
     border-radius: 0px 0px 10px 10px;
 }
+.bord4{
+  border: 1px solid #3c422e;
+  border-radius: 10px 10px 0px 0px;
+}
 
+/* Responsive behaviour */
 
-/* CSS for responsive behavior */
 @media (max-width: 1000px) {
   .main {
     flex-direction: column;
     overflow-y: scroll;
-    height: 80vh;
+    /* height: 80vh; */
   }
 
   .container {
@@ -182,19 +216,20 @@ color: #eaff00;
 
   .carousel {
     width: 100%;
-    height: 80vh;
+    /* height: 80vh; */
     position: absolute;
   }
 
   .carousel img {
     width: 100%;
     object-fit: cover;
+    height: fit-content;
   }
 
   .info {
     width: 100%;
     position: relative;
-    top: 80vh;
+    top: 55vh;
     height: auto;
     overflow: visible;
   }
@@ -203,9 +238,34 @@ color: #eaff00;
     flex-direction: column;
   }
   .indicator-buttons{
+    position: absolute;
     flex-direction: row;
-    bottom: 30vh;
-    padding: 0px 3%;
-    left: 0;
+    bottom: 42vh;
+    left: 40%;
+    padding: 0px;
+    margin: auto;
+    z-index: 4;
   }
+  .indicator-buttons button {
+    height: 12px;
+    width: 12px;
+  }
+  .product-title {
+    font-size: 3.75rem;
 }
+.image{
+  display: none;
+}
+.indicator-buttons button.active {
+  background-color: rgba(113, 255, 113, 0.7);
+}
+.quali-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+.bord {
+  margin: 0;
+}
+}
+
